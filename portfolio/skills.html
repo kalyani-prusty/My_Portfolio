@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+      padding-top: 100px;
+    }
+
+    header {
+      background-color: #333;
+      padding: 15px 5%;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 8px;
+      transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    .skills-section {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      background: #1e1e1e;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #00bcd4;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .skill {
+      flex: 1 1 30%;
+      min-width: 260px;
+      background-color: #2a2a2a;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+    }
+
+.skill h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(0, 188, 212, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+    .progress {
+      background-color: #ccc;
+      border-radius: 20px;
+      height: 20px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      text-align: center;
+      line-height: 20px;
+      color: white;
+      font-weight: bold;
+      border-radius: 20px;
+    }
+
+    .html {
+      background-color: #37b437;
+      width: 90%;
+    }
+
+    .css {
+      background-color: #d7b806;
+      width: 85%;
+    }
+
+    .javascript {
+      background-color: #de0029;
+      width: 75%;
+    }
+
+    .react {
+      background-color: #de0029;
+      width: 70%;
+    }
+
+    .java {
+      background-color: #37b437;
+      width: 90%;
+    }
+
+    .advanced-java {
+      background-color: #d7b806;
+      width: 85%;
+    }
+
+    .spring {
+      background-color: #de0029;
+      width: 75%;
+    }
+
+    .oracle {
+      background-color: #37b437;
+      width: 93%;
+    }
+
+    .android {
+      background-color: #d7b806;
+      width: 85%;
+    }
+    .progress-bar {
+    height: 100%;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 0;
+    transition: width 2s ease;
+  }
+
+  /* Optional: add small hover effect */
+  .skill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.2);
+    transition: all 0.3s ease;
+  }
+
+    @media (max-width: 768px) {
+      .skill {
+        flex: 1 1 45%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .skill {
+        flex: 1 1 100%;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="skills-section">
+    <h1>My Skills</h1>
+    <div class="skills-container">
+      <div class="skill">
+        <h3><i class="fab fa-html5" style="color: #e44d26;"></i> HTML</h3>
+        <div class="progress"><div class="progress-bar html">90%</div></div>
+      </div>
+
+    <div class="skill">
+      <h3><i class="fab fa-css3-alt" style="color: #264de4;"></i>CSS </h3>
+      <div class="progress"><div class="progress-bar css">85%</div></div>
+    </div>
+
+    <div class="skill">
+      <h3><i class="fab fa-js" style="color: #f0db4f;"></i>javascript</h3>
+      <div class="progress"><div class="progress-bar javascript">73%</div></div>
+    </div>
+
+    <div class="skill">
+      <h3><i class="fab fa-react" style="color: #61dbfb;"></i>React js</h3>
+      <div class="progress"><div class="progress-bar react">70%</div></div>
+    </div>
+
+    <div class="skill">
+      <h3><i class="fab fa-java" style="color: #f89820;"></i>Java</h3>
+      <div class="progress"><div class="progress-bar java">95%</div></div>
+    </div>
+
+    <div class="skill">
+      <h3><i class="fas fa-laptop-code" style="color: #f89820;"></i>Advance Java</h3>
+      <div class="progress"><div class="progress-bar advanced-java">86%</div></div>
+    </div>
+
+    <div class="skill">
+      <h3><i class="fas fa-leaf" style="color: #6db33f;"></i>Spring Boot</h3>
+      <div class="progress"><div class="progress-bar spring boot">76%</div></div>
+    </div>
+
+    <div class="skill">
+      <h3><i class="fas fa-database" style="color: #f80000;"></i>Oracle</h3>
+      <div class="progress"><div class="progress-bar oracle">90%</div></div>
+    </div>
+
+    <div class="skill">
+      <h3><i class="fab fa-android" style="color: #a4c639;"></i>Android app development</h3>
+      <div class="progress"><div class="progress-bar android">83%</div></div>
+    </div>
+
+    </div>
+  </section>
+
+  <!-- Add this just before </body> tag -->
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const progressBars = document.querySelectorAll('.progress-bar');
+    progressBars.forEach(bar => {
+      const width = bar.classList.contains('html') ? '90%' :
+                    bar.classList.contains('css') ? '85%' :
+                    bar.classList.contains('javascript') ? '75%' :
+                    bar.classList.contains('react') ? '70%' :
+                    bar.classList.contains('java') ? '90%' :
+                    bar.classList.contains('advanced-java') ? '85%' :
+                    bar.classList.contains('spring') ? '75%' :
+                    bar.classList.contains('oracle') ? '93%' :
+                    bar.classList.contains('android') ? '85%' : '0%';
+      setTimeout(() => {
+        bar.style.width = width;
+      }, 300);
+    });
+  });
+</script>
+
+</body>
+</html>

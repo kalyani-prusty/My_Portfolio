@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+      padding-top: 60px;
+    }
+
+    header {
+      background-color: #333;
+      padding: 15px 5%;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 8px;
+      transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin: 20px 0;
+      color: #00bcd4;
+    }
+
+    .marquee-wrapper {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+      padding: 30px 0;
+    }
+
+    .marquee-content {
+      display: flex;
+      width: max-content;
+      animation: scroll-left 40s linear infinite;
+      gap: 25px;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .marquee-content:hover {
+      animation-play-state: paused;
+    }
+
+    .project-card {
+      background: #1e1e1e;
+      width: 290px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0, 188, 212, 0.4);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-card h3 {
+      font-size: 1.2rem;
+      margin: 15px 10px 5px;
+      color: #00e5ff;
+      text-align: center;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin: 10px;
+      text-align: justify;
+    }
+
+    .tags {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 10px;
+    }
+
+    .tag {
+      background-color: #333;
+      color: #00bcd4;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: bold;
+    }
+
+    .btn-container {
+      text-align: center;
+      margin-top: auto;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #ccc;
+      color: #121212;
+      font-weight: bold;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #919395;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .project-card {
+        width: 80vw;
+      }
+
+      .marquee-content {
+        animation-duration: 60s;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      .project-card p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2>My Projects</h2>
+
+  <div class="marquee-wrapper">
+    <div class="marquee-content">
+      <!-- Project Cards Start -->
+      <div class="project-card">
+        <img src="phd.png" alt="PhD Dashboard" />
+        <h3>PhD Dashboard</h3>
+        <p>A web-based tool to help Ph.D. students and supervisors manage academic research activities and course progress efficiently.</p>
+        <div class="tags">
+          <span class="tag">Advance java</span>
+          <span class="tag">html & css</span>
+          <span class="tag">JSP</span>
+        </div>
+        <div class="btn-container">
+          <a href="https://github.com/kalyani-prusty/phd_dashboard" class="btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="age.png" alt="Age Calculator" />
+        <h3>Age Calculator</h3>
+        <p>An Age Calculator in HTML is a simple web application that takes a user's birthdate as input and calculates their current age based on today's date.</p>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <div class="btn-container">
+          <a href="https://github.com/kalyani-prusty/Age-Calculator" class="btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="makeup.png" alt="Makeup App" />
+        <h3>Make-up App</h3>
+        <p>An Android application for ordering and managing makeup products online, with filters by product type and date.</p>
+        <div class="tags">
+          <span class="tag">Android</span>
+          <span class="tag">Java</span>
+          <span class="tag">Sqlite</span>
+        </div>
+        <div class="btn-container">
+          <a href="https://github.com/kalyani-prusty/my_makeup_app" class="btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="hstl.png" alt="Hostel Management System" />
+        <h3>Hostel Management System</h3>
+        <p>A React and Spring Boot based system for managing hostel room allocation, student profiles, and administrative tasks.</p>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">MySQL</span>
+        </div>
+        <div class="btn-container">
+          <a href="https://github.com/kalyani-prusty/Hostel_management_system" class="btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="portfolio.png" alt="My Portfolio" />
+        <h3>My Portfolio</h3>
+        <p>A personal portfolio site showcasing my background, skills, and projects with a responsive and modern design.</p>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Bootstrap</span>
+        </div>
+        <div class="btn-container">
+          <a href="https://github.com/kalyani-prusty/My_Portfolio" class="btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="phd.png" alt="PhD Dashboard" />
+        <h3>PhD Dashboard</h3>
+        <p>A web-based tool to help Ph.D. students and supervisors manage academic research activities and course progress efficiently.</p>
+        <div class="tags">
+          <span class="tag">Advance java</span>
+          <span class="tag">html & css</span>
+          <span class="tag">JSP</span>
+        </div>
+        <div class="btn-container">
+          <a href="https://github.com/kalyani-prusty/phd_dashboard" class="btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="age.png" alt="Age Calculator" />
+        <h3>Age Calculator</h3>
+        <p>An Age Calculator in HTML is a simple web application that takes a user's birthdate as input and calculates their current age based on today's date.</p>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <div class="btn-container">
+          <a href="https://github.com/kalyani-prusty/Age-Calculator" class="btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="makeup.png" alt="Makeup App" />
+        <h3>Make-up App</h3>
+        <p>An Android application for ordering and managing makeup products online, with filters by product type and date.</p>
+        <div class="tags">
+          <span class="tag">Android</span>
+          <span class="tag">Java</span>
+          <span class="tag">Sqlite</span>
+        </div>
+        <div class="btn-container">
+          <a href="https://github.com/kalyani-prusty/my_makeup_app" class="btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="hstl.png" alt="Hostel Management System" />
+        <h3>Hostel Management System</h3>
+        <p>A React and Spring Boot based system for managing hostel room allocation, student profiles, and administrative tasks.</p>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">MySQL</span>
+        </div>
+        <div class="btn-container">
+          <a href="https://github.com/kalyani-prusty/Hostel_management_system" class="btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="portfolio.png" alt="My Portfolio" />
+        <h3>My Portfolio</h3>
+        <p>A personal portfolio site showcasing my background, skills, and projects with a responsive and modern design.</p>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Bootstrap</span>
+        </div>
+        <div class="btn-container">
+          <a href="https://github.com/kalyani-prusty/My_Portfolio" class="btn">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

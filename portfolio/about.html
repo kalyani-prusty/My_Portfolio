@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Kalyani Prusty</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #121212;
+      color: white;
+      padding-top: 80px;
+      text-align: center;
+    }
+
+    header {
+      background-color: #222;
+      padding: 15px 5%;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 8px 12px;
+      transition: background 0.3s ease;
+      border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+      background-color: #00bcd4;
+      color: #121212;
+    }
+
+    .profile-img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      border: 0.1px solid #141e1f;
+      margin: 10px auto;
+      object-fit: cover;
+      box-shadow: 0 0 20px #00bcd4;
+    }
+
+    .bio {
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding-bottom: 20px;
+    }
+
+    .card {
+      background: #1e1e1e;
+      border-radius: 12px;
+      padding: 25px 20px;
+      width: 200px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 12px #00bcd4;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px #00bcd4;
+    }
+
+    .card img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      color: #fff;
+      font-size: 1.0rem;
+      margin-bottom: -0.9px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        gap: 1rem;
+        flex-direction: column;
+      }
+
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+    
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <img src="kp.jpg" alt="Kalyani Prusty" class="profile-img" />
+  
+  <p class="bio">
+    I’m Kalyani Prusty, a passionate software developer with a strong focus on Android applications, responsive web design, and full-stack Java projects. I love crafting digital experiences that solve real-world problems while looking great and performing smoothly.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4bb.png" alt="Frontend Developer" />
+      <h3>Frontend Developer</h3>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxKQRV61d1WKnIW6jEgwrN9Goum6w13dzFCQ&s" alt="Web Design" />
+      <h3>Backend Developer</h3>
+    </div>
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4c8.png" alt="Web Design" />
+      <h3>Web Developer</h3>
+    </div>
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4f1.png" alt="Software Developer" />
+      <h3>Software Developer</h3>
+    </div>
+    <div class="card">
+      <img src="https://5.imimg.com/data5/VW/UM/LW/GLADMIN-66267938/selection-049-500x500.png" alt="App Developer" />
+      <h3>App Developer</h3>
+    </div>
+  </div>
+  
+  </div>
+
+</body>
+</html>
